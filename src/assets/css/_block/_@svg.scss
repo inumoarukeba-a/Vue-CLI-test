@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+[class^='svg'] {
+  transition: transform $base-duration $easing;
+  path {
+    transition: stroke $base-duration $easing;
+  }
+}
+// .\@svg__arrow {
+// }

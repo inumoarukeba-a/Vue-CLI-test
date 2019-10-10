@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+.\@titleA {
+  display: flex;
+  align-items: center;
+
+  &.-vertical {
+    display: block;
+  }
+}
+
+.\@titleA__english {
+  display: block;
+  line-height: 1.2;
+  @include font-din;
+  @include mq-pc {
+    margin-right: rem(20);
+    font-size: rem(38);
+  }
+  @include mq-sp {
+    margin-right: vw(8);
+    font-size: vw(32);
+  }
+
+  .-vertical & {
+    margin-right: 0;
+    @include mq-sp {
+      font-size: vw(36);
+    }
+  }
+
+  .-white & {
+    color: #fff;
+    @include mq-sp {
+      font-size: vw(40);
+    }
+  }
+}
+
+.\@titleA__japanese {
+  display: block;
+  color: $color-main;
+  @include font-noto(medium);
+
+  .-white & {
+    color: #fff;
+  }
+}

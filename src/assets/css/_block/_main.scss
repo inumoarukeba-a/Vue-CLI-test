@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+.main {
+  & + * {
+    @include mq-pc {
+      margin-top: rem(168);
+    }
+    @include mq-sp {
+      margin-top: 21vw;
+    }
+  }
+}

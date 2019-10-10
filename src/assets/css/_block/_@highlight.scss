@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+.\@highlight {
+  background: linear-gradient(transparent 61.8%, $color-darkBlue 0%);
+  color: $color-key;
+
+  @include font-noto(bold);
+  @include mq-pc {
+    font-size: rem(31);
+    padding: 0 rem(8);
+  }
+  @include mq-sp {
+    font-size: vw(24);
+    padding: 0 2vw;
+  }
+
+  span {
+    @include mq-pc {
+      font-size: rem(26);
+    }
+    @include mq-sp {
+      font-size: vw(20);
+    }
+  }
+}

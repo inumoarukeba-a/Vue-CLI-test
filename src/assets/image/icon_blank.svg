@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.003" height="9.004" viewBox="0 0 9.003 9.004">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="9.003" height="9.004" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="New_Window" data-name="New Window" clip-path="url(#clip-path)">
+    <g id="blank" transform="translate(0 0.251)">
+      <g id="アセット_3" data-name="アセット 3" transform="translate(0 -0.25)">
+        <path id="パス_105" data-name="パス 105" d="M4.7,5H1.26A1.26,1.26,0,0,0,0,6.283V9.013a1.26,1.26,0,0,0,1.26,1.238H4.7A1.26,1.26,0,0,0,6,9.013V6.283A1.26,1.26,0,0,0,4.7,5Zm.323,3.751a.6.6,0,0,1-.6.6H1.538a.6.6,0,0,1-.6-.6V6.56a.6.6,0,0,1,.6-.6H4.426a.6.6,0,0,1,.6.6Z" transform="translate(0 -1.249)" fill="#fff"/>
+        <path id="パス_106" data-name="パス 106" d="M8.7,0H5.26A1.26,1.26,0,0,0,4,1.26V3h.938V1.538a.6.6,0,0,1,.6-.6H8.426a.6.6,0,0,1,.6.6V3.751a.6.6,0,0,1-.6.6H7.751v.9H8.7A1.26,1.26,0,0,0,10,3.991V1.26A1.26,1.26,0,0,0,8.7,0Z" transform="translate(-0.999 0)" fill="#fff"/>
+      </g>
+      <path id="パス_63" data-name="パス 63" fill="none"/>
+      <path id="パス_65" data-name="パス 65" fill="none"/>
+    </g>
+  </g>
+</svg>

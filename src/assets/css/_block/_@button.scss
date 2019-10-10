@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+.\@button {
+  display: inline-block;
+  border: 1px solid $color-main;
+  border-radius: 1px;
+  border-radius: 5em;
+  background: $color-main;
+  line-height: 1.3;
+  text-align: center;
+  color: #fff;
+  @include mq-pc {
+    padding: rem(16) rem(40);
+  }
+  @include mq-sp {
+    padding: 5vw 5vw;
+    font-size: 4vw;
+    min-width: vw(224);
+  }
+
+  &.-sizeS {
+    @include mq-pc {
+      padding: rem(16) rem(32);
+    }
+    @include mq-sp {
+      padding: 3vw 8vw;
+      min-width: 0;
+    }
+  }
+
+  &.-gold {
+    border-color: $color-gold;
+    background: #fff;
+    box-shadow: none;
+    color: $color-gold;
+  }
+  &.-white {
+    border-color: $color-main;
+    background: #fff;
+    color: $color-main;
+  }
+  &.-border {
+    background-color: #fff;
+    color: $color-main;
+  }
+
+  @include mq-pc {
+    @include hover {
+      background: #fff;
+      color: $color-main;
+      &.-gold {
+        background: $color-gold;
+        color: #fff;
+      }
+      &.-white {
+        background: $color-main;
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+}
+
+/* Element
+───────────────────────────────── */
+.\@button__inner {
+  display: inline-block;
+  background: url('/housing/asset/image/icon_arrow02_white.svg') left center
+    no-repeat;
+  @include font-noto(medium);
+  @include mq-pc {
+    padding-left: rem(24);
+    background-size: rem(16);
+  }
+  @include mq-sp {
+    padding-left: 8vw;
+    background-size: 4vw;
+  }
+
+  .-gold & {
+    background: url('/housing/asset/image/icon_arrow02_gold.svg') left center
+      no-repeat;
+    @include mq-pc {
+      background-size: rem(16);
+    }
+    @include mq-sp {
+      background-size: 4vw;
+    }
+  }
+
+  .-white & {
+    background: url('/housing/asset/image/icon_arrow02_blue.svg') left center
+      no-repeat;
+    @include mq-pc {
+      background-size: rem(15);
+    }
+    @include mq-sp {
+      background-size: vw(15);
+    }
+  }
+
+  @include mq-pc {
+    a:hover & {
+      background: url('/housing/asset/image/icon_arrow02_blue.svg') left center
+        no-repeat;
+      background-size: rem(16);
+    }
+    a.-gold:hover & {
+      background: url('/housing/asset/image/icon_arrow02_white.svg') left center
+        no-repeat;
+      background-size: rem(16);
+    }
+    a.-white:hover & {
+      background: url('/housing/asset/image/icon_arrow02_white.svg') left center
+        no-repeat;
+      background-size: rem(15);
+    }
+  }
+}

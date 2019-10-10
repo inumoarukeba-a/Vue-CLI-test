@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+.\@linkB {
+  display: inline-block;
+  color: $color-main;
+  @include mq-pc {
+    @include font-noto(medium);
+    background: url('/housing/asset/image/icon_arrow_blue_right.svg') rem(20)
+      center no-repeat;
+    background-size: rem(8);
+    font-size: rem(14);
+    padding: rem(2) rem(24) rem(2) rem(40);
+    border: 1px solid $color-main;
+    border-radius: 100px;
+  }
+  @include mq-sp {
+    @include font-noto(regular);
+    background: url('/housing/asset/image/icon_arrow_blue_right.svg') 0 center
+      no-repeat;
+    background-size: vw(8);
+    padding: 0 8vw;
+    display: block;
+  }
+
+  &.-white {
+    color: #fff;
+    background: url('/housing/asset/image/icon_arrow_white_right.svg') rem(24)
+      center no-repeat;
+    border-color: #fff;
+    @include mq-pc {
+      background-size: rem(8);
+    }
+    @include mq-sp {
+      background-size: vw(8);
+    }
+  }
+  @include mq-pc {
+    &:hover {
+      color: #fff;
+      transition: $base-duration $easing;
+      background: $color-main
+        url('/housing/asset/image/icon_arrow_white_right.svg') rem(24) center
+        no-repeat;
+      background-size: rem(8);
+    }
+  }
+}

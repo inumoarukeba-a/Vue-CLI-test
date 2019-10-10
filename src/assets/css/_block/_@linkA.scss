@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+.\@linkA {
+  display: inline-block;
+  @include font-noto(regular);
+  @include mq-pc {
+    padding-left: rem(16);
+    background: url('/housing/asset/image/icon_arrow_blue_right.svg') left
+      center no-repeat;
+    background-size: rem(8);
+  }
+  @include mq-sp {
+    padding: 0 8vw;
+    background: url('/housing/asset/image/icon_arrow_blue_right.svg') left
+      center no-repeat;
+    background-size: vw(8);
+    display: block;
+  }
+  @include mq-pc {
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &.-white {
+    background: url('/housing/asset/image/icon_arrow_white_right.svg') left
+      center no-repeat;
+    color: #fff;
+    @include mq-pc {
+      background: url('/housing/asset/image/icon_arrow_white_right.svg') left
+        center no-repeat;
+      background-size: rem(8);
+    }
+    @include mq-sp {
+      background: url('/housing/asset/image/icon_arrow_white_right.svg') left
+        center no-repeat;
+      background-size: vw(8);
+    }
+  }
+}

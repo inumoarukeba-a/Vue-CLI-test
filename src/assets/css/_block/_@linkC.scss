@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+.\@linkC {
+  display: inline-block;
+  @include mq-pc {
+    padding-left: rem(24);
+    background: url('/housing/asset/image/icon_arrow02_blue.svg') left rem(10)
+      no-repeat;
+    font-size: rem(14);
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+  @include mq-sp {
+    padding-left: 8vw;
+    background: url('/housing/asset/image/icon_arrow02_blue.svg') left vw(10)
+      no-repeat;
+    font-size: vw(14);
+  }
+}

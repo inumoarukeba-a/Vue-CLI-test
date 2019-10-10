@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8.215" height="12.632" viewBox="0 0 8.215 12.632">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="12.632" height="8.215" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Arrow" transform="translate(0 12.632) rotate(-90)" clip-path="url(#clip-path)">
+    <g id="SP_Arrow" data-name="SP Arrow" transform="translate(12.537 0.079) rotate(90)">
+      <path id="_" data-name="&gt;" d="M364.4,1889.282l6.833,5.626-6.833,5.624" transform="translate(-363.788 -1888.686)" fill="none" stroke="#ddd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

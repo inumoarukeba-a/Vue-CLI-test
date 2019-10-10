@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+.contents {
+  background-color: $color-lightBlue;
+  @include mq-pc {
+    border-radius: rem(16);
+    padding: rem(64) rem(64) rem(104) rem(64);
+  }
+  @include mq-sp {
+    padding: 13vw 8vw;
+  }
+}

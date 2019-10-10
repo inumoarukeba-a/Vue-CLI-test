@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Block
+───────────────────────────────── */
+.note {
+  display: grid;
+  background-color: $color-lightYellow;
+  @include mq-pc {
+    grid-template:
+      'icon lead' auto /
+      auto 1fr;
+    grid-gap: rem(24);
+    padding: rem(24) rem(64);
+    border-radius: rem(16);
+  }
+  @include mq-sp {
+    grid-template:
+      'icon lead' auto /
+      auto 1fr;
+    grid-gap: 3vw;
+    padding: 5vw 8vw;
+  }
+
+  & + * {
+    @include mq-pc {
+      margin-top: rem(104);
+    }
+  }
+}
+
+/* Element
+───────────────────────────────── */
+.note__icon {
+  grid-area: icon;
+}
+
+.note__lead {
+  grid-area: lead;
+  line-height: 1.5;
+  align-self: center;
+  @include mq-pc {
+    font-size: rem(14);
+  }
+  @include mq-sp {
+    font-size: vw(14);
+  }
+}
