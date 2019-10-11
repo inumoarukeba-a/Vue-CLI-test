@@ -1,26 +1,34 @@
 /* HTML
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <svg
+    class="@svg__arrow"
+    xmlns="http://www.w3.org/2000/svg"
+    width="9.663"
+    height="14.945"
+    viewBox="0 0 9.663 14.945"
+  >
+    <path
+      data-name="&gt;"
+      d="M0,13,8,6.5,0,0"
+      transform="translate(0.972 0.972)"
+      fill="none"
+      stroke="#0065bc"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.382"
+    />
+  </svg>
 </template>
 
 
 /* Script
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 <script>
-import Arrow from "@/modules/Arrow.vue";
-
-export default {
-  components: {
-    Arrow
-  }
-};
 </script>
 
 
 /* Style
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-<style scoped lang="scss">
+<style lang="scss">
 </style>

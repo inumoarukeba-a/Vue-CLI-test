@@ -1,3 +1,5 @@
+/* HTML
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 <template>
   <div class="event">
     <header class="event__header">
@@ -14,7 +16,7 @@
               <div class="event__thumbnail">
                 <img
                   class="event__image"
-                  src="@/assets/image/dummy_event@2x.png"
+                  src="@/assets/image/home/dummy_event@2x.png"
                   alt="イベント名が入りますイベント名が"
                 />
               </div>
@@ -30,7 +32,7 @@
               <div class="event__thumbnail">
                 <img
                   class="event__image"
-                  src="@/assets/image/dummy_event@2x.png"
+                  src="@/assets/image/home/dummy_event@2x.png"
                   alt="イベント名が入りますイベント名が"
                 />
               </div>
@@ -46,7 +48,7 @@
               <div class="event__thumbnail">
                 <img
                   class="event__image"
-                  src="@/assets/image/dummy_event@2x.png"
+                  src="@/assets/image/home/dummy_event@2x.png"
                   alt="イベント名が入りますイベント名が"
                 />
               </div>
@@ -62,7 +64,7 @@
               <div class="event__thumbnail">
                 <img
                   class="event__image"
-                  src="@/assets/image/dummy_event@2x.png"
+                  src="@/assets/image/home/dummy_event@2x.png"
                   alt="イベント名が入りますイベント名が"
                 />
               </div>
@@ -78,7 +80,7 @@
               <div class="event__thumbnail">
                 <img
                   class="event__image"
-                  src="@/assets/image/dummy_event@2x.png"
+                  src="@/assets/image/home/dummy_event@2x.png"
                   alt="イベント名が入りますイベント名が"
                 />
               </div>
@@ -93,8 +95,12 @@
         <aside class="event__pagination swiper-pagination"></aside>
       </div>
       <aside class="event__controller">
-        <div class="event__prev swiper-button-prev"></div>
-        <div class="event__next swiper-button-next"></div>
+        <div class="event__prev swiper-button-prev">
+          <Arrow />
+        </div>
+        <div class="event__next swiper-button-next">
+          <Arrow />
+        </div>
       </aside>
     </div>
     <div class="event__more">
@@ -103,17 +109,22 @@
   </div>
 </template>
 
+/* Script
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 <script>
+import Arrow from "@/modules/Arrow.vue";
+
 export default {
-  name: "PickUp",
-  props: {
-    msg: String
+  components: {
+    Arrow
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+
+/* Style
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+<style lang="scss">
 /* Block
 ───────────────────────────────── */
 .event {

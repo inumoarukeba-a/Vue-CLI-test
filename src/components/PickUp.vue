@@ -1,12 +1,14 @@
+/* HTML
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 <template>
   <div class="hero">
     <picture class="hero__picture">
       <source
         media="(min-width: 768px)"
-        srcset="@/assets/image/hero.jpg 1x, @/assets/image/hero@2x.jpg 2x"
+        srcset="@/assets/image/home/hero.jpg 1x, @/assets/image/home/hero@2x.jpg 2x"
       />
-      <source media="(max-width: 767.9px)" srcset="@/assets/image/hero@sp.jpg" />
-      <img class="hero__image lazyload" src="@/assets/image/hero.jpg" />
+      <source media="(max-width: 767.9px)" srcset="@/assets/image/home/hero@sp.jpg" />
+      <img class="hero__image lazyload" src="@/assets/image/home/hero.jpg" />
     </picture>
     <div class="hero__content">
       <div class="pickup">
@@ -18,12 +20,15 @@
                   <picture class="pickup__picture">
                     <source
                       media="(min-width: 768px)"
-                      srcset="@/assets/image/pickup01.png 1x, @/assets/image/pickup01@2x.png 2x"
+                      srcset="@/assets/image/home/pickup01.png 1x, @/assets/image/home/pickup01@2x.png 2x"
                     />
-                    <source media="(max-width: 767.9px)" srcset="@/assets/image/pickup01@sp.png" />
+                    <source
+                      media="(max-width: 767.9px)"
+                      srcset="@/assets/image/home/pickup01@sp.png"
+                    />
                     <img
                       class="pickup__image lazyload"
-                      src="@/assets/image/pickup01.png"
+                      src="@/assets/image/home/pickup01.png"
                       alt="ご入居お祝い金キャンペーン"
                     />
                   </picture>
@@ -34,12 +39,15 @@
                   <picture class="pickup__picture">
                     <source
                       media="(min-width: 768px)"
-                      srcset="@/assets/image/pickup01.png 1x, @/assets/image/pickup01@2x.png 2x"
+                      srcset="@/assets/image/home/pickup01.png 1x, @/assets/image/home/pickup01@2x.png 2x"
                     />
-                    <source media="(max-width: 767.9px)" srcset="@/assets/image/pickup01@sp.png" />
+                    <source
+                      media="(max-width: 767.9px)"
+                      srcset="@/assets/image/home/pickup01@sp.png"
+                    />
                     <img
                       class="pickup__image lazyload"
-                      src="@/assets/image/pickup01.png"
+                      src="@/assets/image/home/pickup01.png"
                       alt="ご入居お祝い金キャンペーン"
                     />
                   </picture>
@@ -50,25 +58,35 @@
         </div>
         <aside class="pickup__pagination swiper-pagination"></aside>
         <aside class="pickup__controller">
-          <div class="pickup__prev swiper-button-prev"></div>
-          <div class="pickup__next swiper-button-next"></div>
+          <div class="pickup__prev swiper-button-prev">
+            <Arrow />
+          </div>
+          <div class="pickup__next swiper-button-next">
+            <Arrow />
+          </div>
         </aside>
       </div>
     </div>
   </div>
 </template>
 
+
+/* Script
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 <script>
+import Arrow from "@/modules/Arrow.vue";
+
 export default {
-  name: "PickUp",
-  props: {
-    msg: String
+  components: {
+    Arrow
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+
+/* Style
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+<style lang="scss">
 /* Block
 ───────────────────────────────── */
 .hero {
@@ -77,7 +95,7 @@ export default {
     padding-bottom: rem(128);
   }
 
-  &::before {
+  &:before {
     @include mq-pc {
       @include pseudo;
       width: 100%;

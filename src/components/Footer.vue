@@ -1,5 +1,118 @@
-@charset "UTF-8";
+/* HTML
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+<template>
+  <footer class="footer" role="contentinfo">
+    <picture class="footer__picture">
+      <source
+        media="(min-width: 768px)"
+        srcset="@/assets/image/common/foot_img.jpg 1x, @/assets/image/common/foot_img@2x.jpg 2x"
+      />
+      <source media="(max-width: 767.9px)" srcset="@/assets/image/common/foot_img.jpg" />
+      <img
+        class="footer__image lazyload"
+        src="@/assets/image/common/foot_img.jpg"
+        width="1440"
+        height="832"
+      />
+    </picture>
+    <div class="footer__inner">
+      <div class="footer__form">
+        <h2 class="footer__formTitle">登録フォーム</h2>
+        <div class="footer__formButton">
+          <a href="sample" class="@button">
+            <span class="@button__inner">お得な特典を受ける</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__contents">
+        <div class="footer__contact">
+          <div class="footer__contactInner">
+            <h3 class="footer__contactTitle">お問い合わせ・ご相談</h3>
+            <div class="footer__contactData">
+              <h4 class="footer__contactDataTitle">TEL</h4>
+              <a href="sample" class="footer__contactDataTextLink -number">06-6105-1067</a>
+            </div>
+            <div class="footer__contactData">
+              <h4 class="footer__contactDataTitle">MAIL</h4>
+              <a href="sample" class="footer__contactDataTextLink">メールを送る</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__link">
+          <ul class="footer__linkNavigation">
+            <li class="footer__linkNavigationItem">
+              <a href="sample" class="@linkA -white">イベント情報</a>
+            </li>
+            <li class="footer__linkNavigationItem">
+              <a href="sample" class="@linkA -white">提携住宅会社に相談する</a>
+            </li>
+            <li class="footer__linkNavigationItem">
+              <a href="sample" class="@linkA -white">エリアから物件を探す</a>
+            </li>
+          </ul>
+          <ul class="footer__linkUtility">
+            <li class="footer__linkUtilityItem">
+              <a href="sample" class="@linkB -white">住宅相談室とは？</a>
+            </li>
+            <li class="footer__linkUtilityItem">
+              <a href="sample" class="@linkB -white">特典ご利用の流れ</a>
+            </li>
+          </ul>
+          <ul class="footer__utility sp-item">
+            <li class="footer__utilityItem">
+              <a href="sample" class="footer__utilityItemLink -blank">コーポレートサイト</a>
+            </li>
+            <li class="footer__utilityItem">
+              <a href="sample" class="footer__utilityItemLink -blank">プライバシーポリシー</a>
+            </li>
+            <li class="footer__utilityItem">
+              <a href="sample" class="footer__utilityItemLink -blank">企業情報</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__concept">
+          <h3 class="footer__conceptTitle">ジェイアール西日本ウェルネット</h3>
+          <p
+            class="footer__conceptText"
+          >ジェイアール西日本ウェルネットでは、JR西日本グループで働く社員のみなさまへの“福利厚生” の観点のもと、健康で快適な生活を送るための『住まい作り』をお手伝いさせていただきたいと当サービスを行っております。住まいの「購入・売却・リフォーム」など、何から始めていいのか分からない！というお気持ちをぜひお気軽にご相談ください。</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__utility pc-item">
+          <li class="footer__utilityItem">
+            <a href="sample" class="footer__utilityItemLink -blank">コーポレートサイト</a>
+          </li>
+          <li class="footer__utilityItem">
+            <a href="sample" class="footer__utilityItemLink -blank">プライバシーポリシー</a>
+          </li>
+          <li class="footer__utilityItem">
+            <a href="sample" class="footer__utilityItemLink -blank">企業情報</a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          <small>© West Japan Railway Welnet Company.</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+</template>
 
+
+/* Script
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+<script>
+import BreadclumbList from "@/components/BreadclumbList.vue";
+export default {
+  components: {
+    BreadclumbList
+  }
+};
+</script>
+
+
+/* Style
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+<style scoped lang="scss">
 /* Block
 ───────────────────────────────── */
 .footer {
@@ -55,7 +168,7 @@
   display: inline-block;
   color: $color-main;
   @include font-noto(medium);
-  background: url('/housing/asset/image/icon_form_blue.svg') left center
+  background: url("/housing/asset/image/icon_form_blue.svg") left center
     no-repeat;
   @include mq-pc {
     padding-left: rem(40);
@@ -296,8 +409,7 @@
   }
 
   &.-blank {
-    background: url('/housing/asset/image/icon_blank.svg') right center
-      no-repeat;
+    background: url("/asset/image/common/icon_blank.svg") right center no-repeat;
     @include mq-pc {
       background-size: rem(10);
       padding-right: rem(16);
@@ -320,3 +432,4 @@
     margin-top: 8vw;
   }
 }
+</style>

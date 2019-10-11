@@ -1,16 +1,51 @@
+/* HTML
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>
-    <div class="wrapper">
-      <main class="main" role="main">
-        <router-view />
-      </main>
-    </div>
+    <Header />
+    <router-view />
+    <Breadcrumb :breadcrumbs="breadcrumbs" />
+    <Footer />
   </div>
 </template>
 
+
+/* Script
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+<script>
+import Header from "@/components/Header.vue";
+import Breadcrumb from "@/components/BreadclumbList.vue";
+import Footer from "@/components/Footer.vue";
+
+export default {
+  components: {
+    Header,
+    Breadcrumb,
+    Footer
+  },
+  computed: {
+    breadcrumbs: function() {
+      return {
+        data: [
+          {
+            name: "トップページ",
+            path: "/"
+          },
+          {
+            name: "カテゴリー名",
+            path: "/category/"
+          },
+          {
+            name: "記事タイトルです"
+          }
+        ]
+      };
+    }
+  }
+};
+</script>
+
+/* Style
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 <style>
 </style>

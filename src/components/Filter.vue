@@ -1,5 +1,40 @@
-@charset "UTF-8";
+/* HTML
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+<template>
+  <div class="filter">
+    <div class="filter__wrapper">
+      <header class="filter__header">
+        <img
+          class="filter__icon"
+          src="@/assets/image/common/icon_filter.svg"
+          width="16"
+          height="18"
+        />
+        <span class="filter__title">住宅会社を絞り込み</span>
+      </header>
+      <ul class="filter__list">
+        <li class="filter__item">すべて</li>
+        <li class="filter__item">家を建てたい</li>
+        <li class="filter__item">家を買いたい</li>
+        <li class="filter__item">マンションを買いたい</li>
+        <li class="filter__item">土地を売買したい</li>
+        <li class="filter__item">リフォームしたい</li>
+        <li class="filter__item">資産活用したい</li>
+      </ul>
+    </div>
+  </div>
+</template>
 
+
+/* Script
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+<script>
+</script>
+
+
+/* Style
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+<style lang="scss">
 /* Block
 ───────────────────────────────── */
 .filter {
@@ -59,7 +94,7 @@
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -114,8 +149,8 @@
   }
 
   &:before {
-    content: '';
-    background: url('/housing/asset/image/icon_checkbox_checked.svg');
+    content: "";
+    background: url("/assets/image/common/icon_checkbox_checked.svg");
     background-size: cover;
     display: block;
     width: rem(13.461);
@@ -135,3 +170,4 @@
     font-size: rem(13);
   }
 }
+</style>
